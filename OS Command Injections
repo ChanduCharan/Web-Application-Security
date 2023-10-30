@@ -1,3 +1,7 @@
 127.0.01 | tasklist
 127.0.01 | wmic bios
 127.0.01 | whoami
+
+127.0.0.1&& whoami
+127.0.0.1 | ipconfig
+127.0.0.1 | wmic
