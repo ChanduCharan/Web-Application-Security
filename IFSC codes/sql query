@@ -1,18 +1,18 @@
 USE bank;
 
 CREATE TABLE bankinfo (
-    IFSC CHAR(11) PRIMARY KEY,
-    Bank_Name VARCHAR(100),
-    Branch_Name VARCHAR(100),
-    Address VARCHAR(255),
-    City VARCHAR(100),
-    State VARCHAR(100)
+  IFSC CHAR(11) PRIMARY KEY,
+  Bank_Name VARCHAR(100) NOT NULL,
+  Branch_Name VARCHAR(100) NOT NULL,
+  Address VARCHAR(255) NOT NULL,
+  City VARCHAR(100) NOT NULL,
+  State VARCHAR(100) NOT NULL
 );
 
 INSERT INTO bankinfo (IFSC, Bank_Name, Branch_Name, Address, City, State)
-VALUES 
-    ('ABCD0123456', 'Example Bank', 'Example Branch 1', '123 Main Street', 'Example City', 'Example State'),
-    ('EFGH6789012', 'Another Bank', 'Another Branch 1', '456 Elm Street', 'Another City', 'Another State'),
-    ('IJKL3456789', 'Third Bank', 'Third Branch 1', '789 Oak Street', 'Third City', 'Third State'),
-    ('MNOP9012345', 'Fourth Bank', 'Fourth Branch 1', '246 Maple Street', 'Fourth City', 'Fourth State'),
-    ('QRST5678901', 'Fifth Bank', 'Fifth Branch 1', '135 Pine Street', 'Fifth City', 'Fifth State');
+VALUES
+  ('ABCD0123456', 'Example Bank', 'Example Branch 1', '123 Main Street', 'Example City', 'Example State'),
+  ('EFGH6789012', 'Another Bank', 'Another Branch 1', '456 Elm Street', 'Another City', 'Another State'),
+  ('IJKL3456789', 'Third Bank', 'Third Branch 1', '789 Oak Street', 'Third City', 'Third State'),
+  ('MNOP9012345', 'Fourth Bank', 'Fourth Branch 1', '246 Maple Street', 'Fourth City', 'Fourth State'),
+  ('QRST5678901', 'Fifth Bank', 'Fifth Branch 1', '135 Pine Street', 'Fifth City', 'Fifth State');
